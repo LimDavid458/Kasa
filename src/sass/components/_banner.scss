@@ -1,0 +1,19 @@
+.banner {
+    position: relative;
+
+    h1 {
+        position: absolute;
+        left: 16px;
+        top: 31px;
+        color: white;
+        z-index: 1;
+    }
+
+    img {
+        border-radius: 10px;
+        margin-bottom: 22px;
+        width: 100%;
+        filter: brightness(.7);
+    }
+    
+}

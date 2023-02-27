@@ -1,0 +1,21 @@
+@use '../abstracts/mixins' as *;
+
+.accommodation {
+    @include space;
+    margin-top: 27px;
+
+    &__title {
+        color: #FF6060;
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+    
+}

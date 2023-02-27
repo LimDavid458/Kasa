@@ -1,11 +1,11 @@
-import Banner from '../components/Banner'
-import Thumbs from '../components/Thumbs'
+import Banner from '../components/Banner';
+import Gallery from '../components/Gallery';
 
 function Home() {
     return (
       <div className="main-wrapper">
         <Banner />
-        <Thumbs />
+        <Gallery />
       </div>
     )
 }

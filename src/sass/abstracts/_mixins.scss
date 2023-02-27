@@ -1,0 +1,18 @@
+@use './variables' as *;
+
+@mixin space {
+    margin-left: 20px;
+    margin-right: 20px;
+    @include desktop-only{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoint,desktop)) {
+        @content;
+
+    }
+}

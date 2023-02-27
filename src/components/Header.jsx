@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import logo from '../../assets/LOGO.svg' 
+import { Link } from 'react-router-dom';
+import logo from '../assets/LOGO.svg';
 
 function Header() {
     return (
@@ -7,7 +7,7 @@ function Header() {
             <img src={logo} alt='Logo kasa'/>
             <nav>
                 <Link to="/">Accueil</Link>
-                <Link to="/A-Propos">A Propos</Link>
+                <Link to="/About">A Propos</Link>
             </nav>
         </header>
     )

@@ -1,5 +1,11 @@
+@use '../abstracts/mixins' as *;
+
 .banner {
     position: relative;
+    margin-bottom: 22px;
+    @include desktop-only{
+        margin-bottom: 99px;
+    }
 
     h1 {
         position: absolute;
@@ -11,9 +17,11 @@
 
     img {
         border-radius: 10px;
-        margin-bottom: 22px;
         width: 100%;
         filter: brightness(.7);
+        @include desktop-only {
+            height: 223px;
+        }
     }
     
 }

@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -6,17 +8,31 @@ body{
 
 h1 {
     font-size: 24px;
+    @include desktop-only{
+        font-size: 48px;
+    }
 }
 
 h2 {
     font-size: 18px;
-    
 }
 
 a {
     font-size: 12px;
+    @include desktop-only{
+        font-size: 24px;
+    }
 }
 
 p {
+    font-size: 12px;
+}
+
+button {
+    font-size: 13px;
+}
+
+.adDescription {
+    font-weight: 400;
     font-size: 12px;
 }

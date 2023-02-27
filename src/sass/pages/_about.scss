@@ -1,0 +1,27 @@
+@use '../abstracts/mixins' as *;
+
+.about {
+    @include space;
+    margin-top: 17px;
+    max-width: 336px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include desktop-only {
+        max-width: 1440px;
+
+    }
+    
+    img {
+        height: 223px;
+        width: 100%;
+        filter: brightness(.7);
+    }
+
+    @include desktop-only {
+        .dropDown {
+            margin-right: 209px;
+            margin-left: 208px;
+        }
+    }
+}

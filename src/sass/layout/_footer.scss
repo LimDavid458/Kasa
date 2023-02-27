@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 footer {
     height: 209px;
     display: flex;
@@ -7,6 +9,9 @@ footer {
     margin-top: 22px;
     background-color: #000;
     color: white;
+    @include desktop-only {
+        margin-top: 50px;
+    }
 
     img {
         height: 38px;

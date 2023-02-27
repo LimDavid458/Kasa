@@ -1,6 +1,11 @@
+@use '../abstracts/mixins' as *;
+
 .main-wrapper {
     margin-top: 16px;
-    margin-right: 20px;
-    margin-left: 20px;
     max-width: 336px;
+    @include space;
+    @include desktop-only{
+        max-width: 1440px;
+        margin-top: 71px;
+    }
 }

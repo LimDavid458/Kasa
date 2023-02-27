@@ -1,1 +1,4 @@
-@use "./home";
+@forward "./home";
+@forward "./about";
+@forward "./error";
+@forward "./accommodation";

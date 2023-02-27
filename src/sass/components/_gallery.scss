@@ -1,0 +1,15 @@
+@use '../abstracts/mixins' as *;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    @include desktop-only{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 60px;
+    }
+    
+}
+

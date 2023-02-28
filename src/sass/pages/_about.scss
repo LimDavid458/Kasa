@@ -7,15 +7,21 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     @include desktop-only {
         max-width: 1440px;
-
+        gap: 31px;
     }
     
     img {
         height: 223px;
         width: 100%;
         filter: brightness(.7);
+        border-radius: 25px;
+    }
+
+    .dropDown:last-child {
+        margin-bottom: 168px;
     }
 
     @include desktop-only {

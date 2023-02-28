@@ -6,12 +6,9 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 22px;
     background-color: #000;
     color: white;
-    @include desktop-only {
-        margin-top: 50px;
-    }
+    width: 100%;
 
     img {
         height: 38px;

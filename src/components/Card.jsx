@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
-export default function Card({ad}) {
+export default function Card({accommodation}) {
     return (
-        <Link to={`logement/${ad.id}`}>
-            <img src={ad.cover} alt={ad.title}/>
-            <h2>{ad.title}</h2>
+        <Link to={`accommodation/${accommodation.id}`}>
+            <img src={accommodation.cover} alt={accommodation.title}/>
+            <h2>{accommodation.title}</h2>
         </Link>
         
     )

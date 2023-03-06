@@ -2,12 +2,12 @@ import bannerMobile from '../assets/Mobile/Banner_home.jpg';
 import bannerDesktop from '../assets/Desktop/Banner_home.jpg';
 
 function Banner() {
-    const desktopSize = ' 1440w'
     return (
-        <section className='banner'>
-            <h1>Chez vous, <br/> partout et ailleurs</h1>
-            <img src={bannerMobile} srcSet={bannerDesktop + desktopSize} alt='Bannière home.'/>
-        </section>
+        <picture className='banner'>
+            <h1>Chez vous, <span>partout et ailleurs</span></h1>
+            <source media='(min-width:376px)' srcSet={bannerDesktop}/>
+            <img src={bannerMobile} alt="Bannière home." />
+        </picture>
     )
 }
 

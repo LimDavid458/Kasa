@@ -4,7 +4,7 @@ import openingArrow from '../assets/arrow_open.svg';
 
 export default function DropDown({title, description}) {
     const [ isOpen, setIsOpen ] = useState(false);
-    
+
     return isOpen ? (
         <div className="dropDown">
             <button onClick={() => setIsOpen(false)}>
@@ -12,7 +12,7 @@ export default function DropDown({title, description}) {
                 <img src={openingArrow} alt=" Icon flèche ouvrante. "/>
             </button>
             <div className='adDescription'>
-                {description}
+                {title === 'Equipement' ? description.map(equipement => <span key={equipement}>{equipement}</span>) : description}
             </div>
             
         </div>

@@ -1,11 +1,12 @@
-import ad from '../api/adList.json';
 import Card from './Card';
+import { useLoaderData } from 'react-router-dom';
 
 export default function Gallery() {
+    const accommodations = useLoaderData();
     return(
         <section className='container'>
-            {ad.map((ad) =>
-                <Card  key={ad.id} ad={ad}/>   
+            {accommodations.map((accommodation) =>
+                <Card  key={accommodation.id} accommodation={accommodation}/>   
             )}
         </section>
     )

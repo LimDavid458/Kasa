@@ -1,0 +1,19 @@
+.author {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+
+    h2 {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        color: #FF6060;
+        text-align: right;
+    }
+
+    img {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+    }
+}

@@ -2,16 +2,18 @@
     list-style: none;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     font-size: 10px;
+    margin-bottom: 16px;
 
     li {
         background: #FF6060;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2px 20px;
         border-radius: 5px;
+        height: 18px;
+        min-width: 84px;
     }
-   
 }

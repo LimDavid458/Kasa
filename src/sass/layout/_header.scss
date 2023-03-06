@@ -6,7 +6,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 
     img {
         max-width: 145px;
@@ -17,16 +17,18 @@ header {
         }
     }
 
+    .currentPage {
+        border-bottom: 1px solid #FF6060;
+    }
+
     nav a {
         color: #FF6060;
         text-decoration: none;
         margin-left: 10px;
+        text-transform: uppercase;
         @include desktop-only{
             margin-left: 57px;
         }
-
-        &:hover {
-            border-bottom: 2px solid #FF6060;
-        }
-    }    
+    }  
+     
 }

@@ -2,11 +2,10 @@
 
 .container a {
     height: 225px;
-    width: 100%;
     color: white;
     text-decoration: none;
     position: relative;  
-    @include desktop-only{
+    @include desktop-only {
         height: 340px;
     }
     

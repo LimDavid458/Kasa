@@ -1,27 +1,27 @@
 .carousel {
     position: relative;
     max-width: 335px;
-   
     
     img {
         width: 100%;
         height: 225px;
         object-fit: cover;
         object-position: center;
+        border-radius: 10px;
     }
 
     .chevron-right {
         position: absolute;
         height: 24px;
         width: 24px;
-        top: 50%;
-        right: 20px;
+        top: 116px;
+        right: 0px;
     }
 
     .chevron-left {
         position: absolute;
-        top: 50%;
-        left: 20px;
+        top: 116px;
+        left: 0px;
         height: 24px;
         width: 24px;
     }

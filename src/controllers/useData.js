@@ -5,6 +5,7 @@ export function loader() {
 }
   
 export function getAccommodationById(id) {
-    const accommodation = accommodations.find(x => x.id === id);
+    const accommodation = accommodations.find(accommodation => accommodation.id === id);
     return accommodation;
 }
+

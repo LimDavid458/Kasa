@@ -4,7 +4,8 @@
     margin-top: 16px;
     max-width: 336px;
     @include space;
-    @include desktop-only{
+    
+    @include desktop-only {
         max-width: 1440px;
         margin-top: 71px;
     }

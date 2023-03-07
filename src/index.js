@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {loader as dataLoader } from './controllers/Data';
+import {loader as dataLoader } from './controllers/useData';
 import {
   createBrowserRouter,
   createRoutesFromElements,

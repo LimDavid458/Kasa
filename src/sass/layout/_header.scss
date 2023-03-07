@@ -11,7 +11,7 @@ header {
     img {
         max-width: 145px;
         height: 47px;
-        @include desktop-only{
+        @include desktop-only { 
             max-width: 210px;
             height: 87px;
         }
@@ -26,7 +26,7 @@ header {
         text-decoration: none;
         margin-left: 10px;
         text-transform: uppercase;
-        @include desktop-only{
+        @include desktop-only {
             margin-left: 57px;
         }
     }  

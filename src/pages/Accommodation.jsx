@@ -4,7 +4,7 @@ import Slider from "../components/Slider";
 import Tag from "../components/Tag";
 import Author from "../components/Author";
 import Rating from "../components/Rating";
-import { getAccommodationById } from "../controllers/Data";
+import { getAccommodationById } from "../controllers/useData";
 
 export default function Accommodation() {
     const { id } = useParams();

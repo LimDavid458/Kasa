@@ -4,7 +4,7 @@
     position: relative;
     margin-bottom: 22px;
     display: block;
-    @include desktop-only{
+    @include desktop-only {
         margin-bottom: 43px;
     }
 

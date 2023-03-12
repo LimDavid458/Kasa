@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .author {
     display: flex;
     gap: 10px;
@@ -9,11 +11,20 @@
         flex-direction: column;
         color: #FF6060;
         text-align: right;
+
+        @include desktop-only {
+            font-size: 18px;
+        }
     }
 
     img {
         height: 32px;
         width: 32px;
         border-radius: 50%;
+
+        @include desktop-only {
+            height: 64px;
+            width: 64px;
+        }
     }
 }

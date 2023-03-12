@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {loader as dataLoader } from './controllers/useData';
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -9,12 +8,17 @@ import {
   Outlet,
 } from "react-router-dom";
 
+import {loader as homeLoader } from './pages/Home';
+import {loader as accommodationLoader} from './pages/Accommodation';
+
 import Header from './components/Header';
+import Footer from './components/Footer';
+
 import Home from './pages/Home';
-import ErrorPage from './pages/Error'
+import ErrorPage from './pages/Error';
 import About from './pages/About';
 import Accommodation from './pages/Accommodation';
-import Footer from './components/Footer';
+
 import './sass/index.scss';
 
 const router = createBrowserRouter(
@@ -27,10 +31,10 @@ const router = createBrowserRouter(
       </>
     }
     >
-      <Route path="/"  errorElement={<ErrorPage />} >
-        <Route index element={<Home />} loader={dataLoader} />
+      <Route path="/" errorElement={<ErrorPage />}  >
+        <Route index element={<Home />} loader={homeLoader} />
         <Route path='about' element={<About />} />
-        <Route path='accommodation/:id' element={<Accommodation />} />
+        <Route path='accommodation/:id' element={<Accommodation />} loader={accommodationLoader} />
         <Route path='*' element={<ErrorPage />} />
       </Route>
       

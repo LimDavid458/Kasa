@@ -9,4 +9,8 @@
         max-width: 1440px;
         margin-top: 71px;
     }
+
+    @include tablette-only {
+        max-width: 1025px;
+    }
 }

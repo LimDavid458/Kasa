@@ -12,7 +12,7 @@ export default function DropDown({title, description}) {
                 <img src={openingArrow} alt=" Icon flèche ouvrante. "/>
             </button>
             <div className='adDescription'>
-                {title === 'Equipement' ? description.map(equipement => <span key={equipement}>{equipement}</span>) : description}
+                {title === 'Equipements' ? description.map(equipement => <span key={equipement}>{equipement}</span>) : description}
             </div>
             
         </div>

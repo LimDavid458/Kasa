@@ -12,6 +12,11 @@
         max-width: 1440px;
         gap: 31px;
     }
+
+    @include tablette-only {
+        max-width: 1440px;
+        gap: 31px;
+    }
     
     img {
         height: 223px;

@@ -28,13 +28,23 @@ a {
 
 p {
     font-size: 12px;
+    @include desktop-only {
+        font-size: 24px;
+    }
 }
 
 button {
     font-size: 13px;
+    @include desktop-only {
+        font-size: 24px;
+    }
 }
 
 .adDescription {
     font-weight: 400;
     font-size: 12px;
+
+    @include desktop-only {
+        font-size: 24px;
+    }
 }

@@ -1,8 +1,6 @@
 import Card from './Card';
-import { useLoaderData } from 'react-router-dom';
 
-export default function Gallery() {
-    const accommodations = useLoaderData();
+export default function Gallery({accommodations}) {
     return(
         <section className='container'>
             {accommodations.map((accommodation) =>

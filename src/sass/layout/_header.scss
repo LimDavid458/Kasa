@@ -28,6 +28,7 @@ header {
         text-transform: uppercase;
         @include desktop-only {
             margin-left: 57px;
+            text-transform: none;
         }
     }  
      

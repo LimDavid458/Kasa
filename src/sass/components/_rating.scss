@@ -1,0 +1,9 @@
+@use '../abstracts/mixins' as *;
+
+.ratingContainer {
+    font-size: 18px;
+
+    @include desktop-only {
+        font-size: 36px;
+    }
+}

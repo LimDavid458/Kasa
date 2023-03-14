@@ -16,6 +16,7 @@
     }
 
     @include desktop-only {
+        margin-top: 169px;
         p {
             font-size: 36px;
         }
@@ -27,8 +28,11 @@
         margin-top: 133px;
         margin-bottom: 235px;
         border-bottom: 1px solid #FF6060;
+
         @include desktop-only {
             font-size: 18px;
+            margin-top: 182px;
+            margin-bottom: 159px;
         }
     }
 }

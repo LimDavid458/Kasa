@@ -17,7 +17,8 @@
 
         .title {
             color: #FF6060;
-
+            margin-bottom: 16px;
+            
             @include desktop-only {
                 display: flex;
                 flex-direction: column;
@@ -76,11 +77,19 @@
                 button {
                     font-size: 18px;
                 }
+
+                .adDescription {
+                    padding-top: 40px;
+                    padding-left: 20px;
+                    padding-bottom: 27px;
+                    padding-right: 12px;
+                }
             }
     
             &:last-child .adDescription {
                 display: flex;
                 flex-direction: column;
+                padding-bottom: 2px;
             }
         }
     }

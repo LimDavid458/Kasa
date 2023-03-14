@@ -16,8 +16,8 @@ export default function Slider({slides}) {
 
     return (
         <div className='carousel'>
-            <img src={chevronRight} alt="Chevron de droite" onClick={prevSlide} className="chevron-right"/>
-            <img src={chevronLeft} alt="" onClick={nextSlide} className="chevron-left"/>
+           <button onClick={prevSlide} className="chevron-right"><img src={chevronRight} alt="Chevron de droite" /></button>
+            <button onClick={nextSlide} className="chevron-left"><img src={chevronLeft} alt="Chevron de gauche" /></button>
             {slides.map((slide, index) => {
                 return (
                     <div key={index} className="slide">

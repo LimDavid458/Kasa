@@ -5,5 +5,7 @@
 
     @include desktop-only {
         font-size: 36px;
+        display: flex;
+        gap: 4px;
     }
 }

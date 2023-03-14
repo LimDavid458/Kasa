@@ -5,12 +5,12 @@
     max-width: 336px;
     @include space;
     
-    @include desktop-only {
+    @include tablette-only {
         max-width: 1440px;
+    }
+
+    @include desktop-only {
         margin-top: 71px;
     }
 
-    @include tablette-only {
-        max-width: 1025px;
-    }
 }

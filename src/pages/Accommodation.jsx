@@ -40,6 +40,5 @@ export default function Accommodation() {
             </div>
             
         </div>
-       
     )
 }

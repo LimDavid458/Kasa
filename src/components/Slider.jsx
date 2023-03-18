@@ -5,7 +5,15 @@ import chevronRight from '../assets/arrow_right.svg'
 export default function Slider({slides}) {
     const [current, setCurrent] = useState(0);
     const length = slides.length;
-  
+
+    // preloader image 
+    (() => {
+        slides.forEach(slide => {
+            const image = new Image(slide);
+            image.src = slide;
+        })
+    })();
+
     const nextSlide = () => {
       setCurrent(current === length - 1 ? 0 : current + 1);
     };
@@ -16,8 +24,13 @@ export default function Slider({slides}) {
 
     return (
         <div className='carousel'>
-           <button onClick={prevSlide} className="chevron-right"><img src={chevronRight} alt="Chevron de droite" /></button>
-            <button onClick={nextSlide} className="chevron-left"><img src={chevronLeft} alt="Chevron de gauche" /></button>
+            {(length > 1) &&
+                <>
+                    <button onClick={prevSlide} className="chevron-right"><img src={chevronRight} alt="Chevron de droite" /></button>
+                    <button onClick={nextSlide} className="chevron-left"><img src={chevronLeft} alt="Chevron de gauche" /></button>
+                </>
+            }
+            
             {slides.map((slide, index) => {
                 return (
                     <div key={index} className="slide">

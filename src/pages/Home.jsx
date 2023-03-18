@@ -4,6 +4,7 @@ import React from 'react';
 
 import Banner from '../components/Banner';
 import Gallery from '../components/Gallery';
+import PlaceHolder from '../components/PlaceHolder';
 
 export function loader() {
   const accommodations = getAccommodations();
@@ -19,7 +20,7 @@ function Home() {
   return (      
     <div className="main-wrapper">
       <Banner />
-      <React.Suspense fallback={<p>Loading package location...</p>}>
+      <React.Suspense fallback={<PlaceHolder />}>
         <Await resolve={data.packageAccommodation} >
           {(accommodations) => (
             <Gallery accommodations={accommodations}/>

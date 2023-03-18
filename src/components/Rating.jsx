@@ -1,4 +1,4 @@
-import { ImStarFull } from "react-icons/im";
+import { GrStar } from "react-icons/gr";
 
 export default function Rating({rating}) {
     let ratingTab =  RatingRead(rating);
@@ -15,7 +15,7 @@ export default function Rating({rating}) {
     return (
       <div className="ratingContainer">   
         {ratingTab.map((isRating, index) => 
-          isRating ? < ImStarFull key={index} color="#FF6060" /> : < ImStarFull key={index} color="#E3E3E3"/> 
+          isRating ? < GrStar key={index} color="#FF6060" /> : < GrStar key={index} color="#E3E3E3"/> 
         )}
       </div>
     )

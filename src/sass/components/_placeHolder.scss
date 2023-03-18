@@ -1,0 +1,22 @@
+@use '../abstracts/mixins' as *;
+
+.card {
+    height: 225px;
+    opacity: .7;
+    animation: skeleton-loading 0.9s linear infinite alternate;
+    position: relative;  
+    border-radius: 10px;
+
+    @include desktop-only {
+        height: 340px;
+    }
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }    
+}

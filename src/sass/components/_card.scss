@@ -5,6 +5,7 @@
     color: white;
     text-decoration: none;
     position: relative;  
+    
     @include desktop-only {
         height: 340px;
     }

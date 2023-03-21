@@ -90,11 +90,14 @@
                     padding-right: 12px;
                 }
             }
-    
+            
+            .adDescription {
+                padding-bottom: 2px;
+            }
+
             &:last-child .adDescription {
                 display: flex;
                 flex-direction: column;
-                padding-bottom: 2px;
             }
         }
     }

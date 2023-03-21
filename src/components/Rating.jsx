@@ -3,6 +3,11 @@ import { GrStar } from "react-icons/gr";
 export default function Rating({rating}) {
     let ratingTab =  RatingRead(rating);
     
+    /**
+     * Add boolean in array
+     * @param {Number} rating - Number of rating 
+     * @returns - Return an array of boolean 
+     */
     function RatingRead(rating) {
         let ratingBoard = [];
         for (let index = 0; index < 5; index++) {

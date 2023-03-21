@@ -8,16 +8,14 @@ import {
   Outlet,
 } from "react-router-dom";
 
-import {loader as homeLoader } from './pages/Home';
-import {loader as accommodationLoader} from './pages/Accommodation';
+import Home, { loader as HomeLoader } from './pages/Home';
+import Accommodation, { loader as AccommodationLoader } from './pages/Accommodation';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-import Home from './pages/Home';
 import ErrorPage from './pages/Error';
 import About from './pages/About';
-import Accommodation from './pages/Accommodation';
 
 import './sass/index.scss';
 
@@ -31,13 +29,12 @@ const router = createBrowserRouter(
       </>
     }
     >
-      <Route path="/" errorElement={<ErrorPage />}  >
-        <Route index element={<Home />} loader={homeLoader} />
+      <Route path="/" errorElement={<ErrorPage />} >
+        <Route index element={<Home />} loader={HomeLoader} />
         <Route path='about' element={<About />} />
-        <Route path='accommodation/:id' element={<Accommodation />} loader={accommodationLoader} />
+        <Route path='accommodation/:id' element={<Accommodation />} loader={AccommodationLoader} />
         <Route path='*' element={<ErrorPage />} />
       </Route>
-      
     </Route>
   )
 );

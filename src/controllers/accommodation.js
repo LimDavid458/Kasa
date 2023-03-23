@@ -12,7 +12,6 @@ export async function getAccommodations() {
  * @returns - Return an accommodation
  */
 export function getAccommodationById(id) {
-    console.log(typeof id);
     return accommodations.find(accommodation => accommodation.id === id) ?? null;
 }
 
